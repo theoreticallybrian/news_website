@@ -1,0 +1,15 @@
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(233,235,247);
+}
+
+.newscard_title{
+    color: white;
+}
+
+.newscard_sample{
+    color: white;
+}

@@ -1,0 +1,15 @@
+.details{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+align-items: center;
+
+}
+
+.details_image{
+    width: 200px;
+    height: 200px;
+}
