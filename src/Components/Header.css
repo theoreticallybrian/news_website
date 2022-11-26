@@ -31,6 +31,17 @@ width: 150px;
     padding: 0px 50px;
 }
 
+@media 
+screen and (max-width: 900px){
+ 
+    .nav_bar{
+        display: none;
+    }
+
+}
+    
+
+
 li{
     margin: 20px;
     font-weight: 600;

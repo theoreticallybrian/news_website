@@ -27,9 +27,9 @@ function logout() {
    
       <div className="nav_bar">
        
-        <Link to="/series" style={{ textDecoration: 'none' }}>
+        <Link to="/sports" style={{ textDecoration: 'none' }}>
           <li>
-            <div className="nav_dot"></div>Series
+            <div className="nav_dot"></div>SportsNews
           </li>
         </Link>
         <Link to="/podcasts" style={{ textDecoration: 'none' }}>

@@ -18,3 +18,15 @@ align-items: center;
     line-height:2;
     width: 70%;
 }
+
+.sports_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+
+    margin: 200px 0px 0px 0px;
+}

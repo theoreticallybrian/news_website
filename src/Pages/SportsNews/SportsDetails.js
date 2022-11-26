@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import {AiOutlineArrowLeft} from 'react-icons/ai'
 import axios from 'axios';
-import "./Details.css";
+import "./SportsDetails.css";
 
 
 function Details() {
@@ -12,14 +12,14 @@ function Details() {
 
     const [data, setData] = useState({});
 
-    const baseUrl = "http://127.0.0.1:8090/api/files/highlights"
+    const baseUrl = "http://127.0.0.1:8090/api/files/sports_news"
 
 
 
     useEffect(() => {
         if (id) {
           axios
-            .get(`http://127.0.0.1:8090/api/collections/highlights/records/${id}`)
+            .get(`http://127.0.0.1:8090/api/collections/sports_news/records/${id}`)
             .then((response) => {
                 setData(response.data);
                 }
@@ -36,14 +36,14 @@ function Details() {
 
 
   return (
-    <div className='details'>
+    <div className='sports_details'>
 <img className='details_image'  src={`${baseUrl}/${data.id}/${data.thumbnail}`} alt={data.headline}/>
 
-<div><Link to="/"><AiOutlineArrowLeft/></Link>
+<div><Link to="/sports"><AiOutlineArrowLeft/></Link>
 </div>
 <h1>{data.headline}</h1>
 
-<p className='paragraph'> {data.description}</p>
+<p className='paragraph'>{data.description}</p>
 
 
     </div>

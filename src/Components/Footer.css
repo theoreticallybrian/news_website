@@ -1,19 +1,29 @@
 .footer{
     width: 100vw;
-    margin-top: 50px;
-    height: 300px;
+    margin-top: 150px;
+    height:auto;
     display: flex;
     padding: 5px;
-    background-color: brown;
-    flex-direction: row;
     margin-bottom: 50px;
 
 }
 
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+ul{
+    cursor: pointer;
+}
+
+
 .footer_column{
-    height: 100%;
+    height:300px;
+    width:100%;
     border: 1px solid;
-    width: 33%;
     background-color: white;
     display: flex;
     flex-direction:column;

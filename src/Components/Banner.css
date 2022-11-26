@@ -23,4 +23,21 @@ width: 30vw;
 
 }
 
+@media screen and (max-width: 900px){
+    .banner{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .col-1{
+        width: 100vw;
+        height: 50vh;
+    }
+    .col-2{
+        width: 100vw;
+        height: 50vh;
+    }
+}
+    
+
+
 

@@ -1,8 +1,12 @@
 import React from "react";
 import "./SportsNews.css";
 import { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
 
 function SportsNews() {
+
+const user = JSON.parse(localStorage.getItem("user"));
+
  const [data, setData] = useState([]);
 
   const getList = () => {
@@ -24,6 +28,8 @@ function SportsNews() {
 
 const baseUrl = "http://127.0.0.1:8090/api/files/sports_news"
 
+if (user) {
+
 
   return (<div className="sportsnews_container">
     <h1>Sports News</h1>
@@ -34,12 +40,16 @@ const baseUrl = "http://127.0.0.1:8090/api/files/sports_news"
   <h1>{data.headline}</h1>
 <p className="sports_description">{data.description}</p>
   </div>
+  <Link to={data.id}>Read More</Link>
 
 </div>
 ))}
 
 
   </div>);
+} else {
+  window.location.href = "/login";
+}
 }
 
 export default SportsNews;
